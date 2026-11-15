@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us | Campus Books</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <img src="assets/campus-books.svg" class="logo" width="220" height="42"
+           usemap="#campus-map" alt="Campus Books">
+      <map name="campus-map" id="campus-map">
+        <area shape="rect" coords="0,0,220,42" href="about.html" alt="About Campus Books">
+      </map>
+      <nav class="menu" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html" aria-current="page">About Us</a>
+        <a href="login.html">Log In</a>
+        <a href="signup.html">Sign Up</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <article class="card">
+      <h1>About Campus Books</h1>
+      <p>Students often have textbooks left over after a course. Other students
+         need those same books for the next semester.</p>
+      <p>Campus Books collects listings in one place so students can find a book
+         by course and compare available copies.</p>
+      <a href="#steps">How to find a book</a>
+    </article>
+    <section class="card" id="steps">
+      <h2>How it works</h2>
+      <ol>
+        <li>Find your course in the catalogue.</li>
+        <li>Choose a book and check its details.</li>
+        <li>Compare its price and condition with the other copies.</li>
+      </ol>
+      <a class="button" href="index.html#catalog">View the catalogue</a>
+    </section>
+  </main>
+  <footer>
+    <p>Campus Books &middot; <span id="site-year">2026</span></p>
+  </footer>
+</body>
+</html>

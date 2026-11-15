@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="42" viewBox="0 0 220 42">
+  <rect width="42" height="42" rx="12" fill="#1d5747"/>
+  <path d="M10 13c5-1 9 0 11 3 3-3 7-4 11-3v16c-4-1-8 0-11 2-3-2-7-3-11-2zM21 16v15"
+        fill="none" stroke="#f7f4e8" stroke-width="2" stroke-linejoin="round"/>
+  <text x="51" y="26" fill="#172c24" font-family="Georgia,serif"
+        font-size="19" font-weight="bold">Campus Books</text>
+</svg>

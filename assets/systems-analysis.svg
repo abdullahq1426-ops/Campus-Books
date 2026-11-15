@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="238" viewBox="0 0 180 238">
+  <rect width="180" height="238" rx="8" fill="#675478"/>
+  <rect x="8" y="8" width="164" height="222" rx="5" fill="none" stroke="#ead5f2" opacity=".55"/>
+  <path d="M18 15v208" stroke="#ead5f2" opacity=".38"/>
+  <text x="28" y="34" fill="#ead5f2" font-family="Arial,sans-serif" font-size="8"
+        font-weight="bold" letter-spacing="1.2">CAMPUS EDITION</text>
+  <g stroke="#ead5f2" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="66" y="57" width="48" height="25" rx="5"/><rect x="32" y="109" width="48" height="25" rx="5"/><rect x="100" y="109" width="48" height="25" rx="5"/><path d="M90 82v13m-34 14V95h68v14"/>
+  </g>
+  <text x="28" y="171" fill="#fffaf0" font-family="Arial,sans-serif"
+        font-size="19" font-weight="bold">SYSTEMS</text>
+  <text x="28" y="193" fill="#fffaf0" font-family="Arial,sans-serif"
+        font-size="17" font-weight="bold">ANALYSIS</text>
+  <path d="M28 211h39" stroke="#ead5f2" stroke-width="2"/>
+</svg>

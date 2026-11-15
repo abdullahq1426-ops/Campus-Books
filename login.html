@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log In | Campus Books</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <img src="assets/campus-books.svg" class="logo" width="220" height="42"
+           usemap="#campus-map" alt="Campus Books">
+      <map name="campus-map" id="campus-map">
+        <area shape="rect" coords="0,0,220,42" href="about.html" alt="About Campus Books">
+      </map>
+      <nav class="menu" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="login.html" aria-current="page">Log In</a>
+        <a href="signup.html">Sign Up</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <section class="card account-card">
+      <h1>Log In</h1>
+      <p class="note">This page is a demonstration of the account form.</p>
+      <form class="account-form" id="login-form" method="post">
+        <label for="login-email">Email address</label>
+        <input id="login-email" name="email" type="email"
+               autocomplete="username" required>
+        <label for="login-password">Password (at least 8 characters)</label>
+        <input id="login-password" name="password" type="password"
+               minlength="8" autocomplete="current-password" required>
+        <button type="submit">Log In</button>
+        <p class="form-status" role="status"></p>
+      </form>
+      <p>New here? <a href="signup.html">Sign up</a>.</p>
+    </section>
+  </main>
+  <footer>
+    <p>Campus Books &middot; <span id="site-year">2026</span></p>
+  </footer>
+</body>
+</html>

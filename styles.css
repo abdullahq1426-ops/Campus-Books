@@ -1,0 +1,87 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #f7f6ef;
+  color: #25362c;
+  font: 16px/1.55 Arial, sans-serif;
+}
+.container { width: 92%; max-width: 1050px; margin: auto; }
+main { padding: 24px 0; }
+h1, h2 { margin: 0 0 12px; font-family: Georgia, serif; }
+p { margin: 0 0 12px; }
+section[id] { scroll-margin-top: 125px; }
+a { color: #245b47; }
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background: #fffef9;
+  border-bottom: 1px solid #d4dcd2;
+}
+.header-content, .menu {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.header-content { justify-content: space-between; padding: 10px 0; }
+.logo { display: block; width: 220px; height: 42px; }
+.menu a { padding: 6px 10px; border-radius: 5px; text-decoration: none; }
+.menu a:hover, .menu a[aria-current="page"] { background: #e5eee4; }
+
+.card {
+  padding: 18px;
+  margin-bottom: 18px;
+  border: 1px solid #d4dcd2;
+  border-radius: 8px;
+  background: #fffefb;
+  box-shadow: 0 4px 12px #26382a12;
+}
+.button, button {
+  display: inline-block;
+  padding: 7px 12px;
+  border: 1px solid #245b47;
+  border-radius: 5px;
+  background: #245b47;
+  color: white;
+  font: inherit;
+  cursor: pointer;
+}
+a.button { text-decoration: none; }
+.button:hover, button:hover { background: #194532; }
+:focus-visible { outline: 2px solid #b87926; outline-offset: 2px; }
+
+.table-scroll { overflow-x: auto; }
+table { width: 100%; min-width: 580px; border-collapse: collapse; }
+caption { padding: 6px 0; text-align: left; }
+th, td { padding: 10px; border-bottom: 1px solid #d4dcd2; text-align: left; }
+thead { background: #ebf0e9; }
+td:last-child { white-space: nowrap; }
+.book-title { display: flex; gap: 12px; align-items: center; }
+.book-title img { border-radius: 3px; }
+
+.account-card { max-width: 440px; margin: 12px auto; }
+label { display: block; font-weight: bold; }
+input {
+  display: block;
+  width: 100%;
+  margin: 4px 0 12px;
+  padding: 7px;
+  border: 1px solid #a9b8ad;
+  border-radius: 4px;
+  background: white;
+  font: inherit;
+}
+.account-form button { width: 100%; margin-bottom: 12px; }
+p.note { color: #526258; }
+.form-status { color: #245b47; }
+.form-status:empty { display: none; }
+footer { padding: 12px; text-align: center; border-top: 1px solid #d4dcd2; }
+footer p { margin: 0; }
+
+@media (max-width: 550px) {
+  .header-content { align-items: flex-start; flex-direction: column; }
+  .menu a { padding: 5px 7px; }
+  .card { padding: 12px; }
+}

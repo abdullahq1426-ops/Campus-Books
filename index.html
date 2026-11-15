@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Campus Books</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <style>
+    .intro { background-color: #eaf2e9; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <img src="assets/campus-books.svg" class="logo" width="220" height="42"
+           usemap="#campus-map" alt="Campus Books">
+      <map name="campus-map" id="campus-map">
+        <area shape="rect" coords="0,0,220,42" href="about.html" alt="About Campus Books">
+      </map>
+      <nav class="menu" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="login.html">Log In</a>
+        <a href="signup.html">Sign Up</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <article class="card intro">
+      <h1>Welcome to <span style="color: #246551;">Campus Books</span></h1>
+      <p>Campus Books brings used textbook listings into one place.
+         Students can find books for their courses and compare prices.</p>
+      <ul>
+        <li>Find a book for your course.</li>
+        <li>Check its price and condition.</li>
+        <li>Give a used textbook another semester.</li>
+      </ul>
+      <a class="button" href="#catalog">View the books</a>
+    </article>
+
+    <section id="catalog">
+      <h2>Book catalogue</h2>
+      <p id="catalog-note">Browse the sample books below.</p>
+      <div class="card table-scroll">
+        <table id="book-table">
+          <caption>Sample used books</caption>
+          <thead>
+            <tr><th scope="col">Title</th><th scope="col">Course</th>
+              <th scope="col">Condition</th><th scope="col">Price</th></tr>
+          </thead>
+          <tbody>
+              <tr>
+                <th scope="row">
+                  <div class="book-title">
+                    <img src="assets/web-design.svg" width="44" height="58"
+                         alt="Cover of Web Design Basics">
+                    <span>Web Design Basics</span>
+                  </div>
+                </th>
+                <td>CPIS 358</td><td>Like new</td><td>45 SAR</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <div class="book-title">
+                    <img src="assets/html-css.svg" width="44" height="58"
+                         alt="Cover of HTML &amp; CSS Essentials">
+                    <span>HTML &amp; CSS Essentials</span>
+                  </div>
+                </th>
+                <td>CPIS 358</td><td>Good</td><td>35 SAR</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <div class="book-title">
+                    <img src="assets/java-programming.svg" width="44" height="58"
+                         alt="Cover of Java Programming">
+                    <span>Java Programming</span>
+                  </div>
+                </th>
+                <td>CPCS 203</td><td>Good</td><td>55 SAR</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <div class="book-title">
+                    <img src="assets/database.svg" width="44" height="58"
+                         alt="Cover of Database Essentials">
+                    <span>Database Essentials</span>
+                  </div>
+                </th>
+                <td>Database Systems</td><td>Like new</td><td>50 SAR</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <div class="book-title">
+                    <img src="assets/systems-analysis.svg" width="44" height="58"
+                         alt="Cover of Systems Analysis">
+                    <span>Systems Analysis</span>
+                  </div>
+                </th>
+                <td>CPIS 351</td><td>Fair</td><td>30 SAR</td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Campus Books &middot; <span id="site-year">2026</span></p>
+  </footer>
+  <script>
+    const books = document.querySelectorAll("#book-table tbody tr");
+    document.getElementById("catalog-note").textContent =
+      "The sample catalogue contains " + books.length + " books.";
+  </script>
+</body>
+</html>
